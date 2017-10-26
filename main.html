@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bar2").hide();
+            $("#bar3").hide();
+            $("#bar4").hide();
+
+            $("#subscribed").hide();
+            $("#subscribed1").hide();
+
+            //----------ALL----------//
+            $("#c1").click(function(){
+                $(this).css({
+                    'font-weight': '600',
+                    'color': 'white'
+                });
+                $("#bar").show();
+                $("#bar2").hide();
+                $("#bar3").hide();
+                $("#bar4").hide();
+                $("#c2").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c3").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c4").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+            });
+
+            //----------PEOPLE----------//
+            $("#c2").click(function(){
+                $("#c2").css({
+                    'font-weight': '600',
+                    'color': 'white'
+                });
+                $("#bar").hide();
+                $("#bar2").show();
+                $("#bar3").hide();
+                $("#bar4").hide();
+                $("#c1").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c3").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c4").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+            });
+
+            //----------TOPICS----------//
+            $("#c3").click(function(){
+                $("#c3").css({
+                    'font-weight': '600',
+                    'color': 'white'
+                });
+                $("#bar").hide();
+                $("#bar2").hide();
+                $("#bar3").show();
+                $("#bar4").hide();
+                $("#c1").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c2").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c4").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+            });
+
+            //----------GROUPS----------//
+            $("#c4").click(function(){
+                $("#c4").css({
+                    'font-weight': '600',
+                    'color': 'white'
+                });
+                $("#bar").hide();
+                $("#bar2").hide();
+                $("#bar3").hide();
+                $("#bar4").show();
+                $("#c1").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c2").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+                $("#c3").css({
+                    'font-weight': '300',
+                    'color': '#656d78'
+                });
+            });
+
+            $("#subscribe1").click(function(){
+                $("#subscribe1").hide();
+                $("#subscribed").show();
+            });
+            $("#subscribe2").click(function(){
+                $("#subscribe2").hide();
+                $("#subscribed1").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="header">
+    <div id="statusbar"></div>
+    <div id="row1"></div>
+    <div id="tabs">
+        <div id="c1">ALL<div id="bar"></div></div>
+        <div id="c2">PEOPLE<div id="bar2"></div></div>
+        <div id="c3">TOPICS<div id="bar3"></div></div>
+        <div id="c4">GROUPS<div id="bar4"></div></div>
+
+        <!--<div id="bar3"></div>-->
+        <!--<div id="bar4"></div>-->
+    </div>
+</div>
+
+<div id="profile">
+    <div id="pic"></div>
+    <div id="name">Bill S Kenney</div>
+    <div id="followsyou">Follows you</div>
+    <button id="follow" class="follow">Follow</button>
+</div>
+
+<div id="past">
+    <h1>Of The Past</h1>
+    <p>28 Photos | Updated 21 Ian 2015</p>
+    <div id="subscribe1">Subscribe</div>
+    <div id="subscribed">Subscribed<div id="checkmark1"></div></div>
+</div>
+
+<div id="workspaces">
+    <h1>Wordspaces</h1>
+    <p>28 Photos | Updated 21 Ian 2015</p>
+    <div id="subscribe2">Subscribe</div>
+    <div id="subscribed1">Subscribed<div id="checkmark2"></div></div>
+</div>
+
+<div id="sanfran"></div>
+
+<div id="tabbar"></div>
+
+</body>
